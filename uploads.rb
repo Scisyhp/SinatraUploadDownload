@@ -29,6 +29,17 @@ get '/uploads/' do
 	return r.getFullResponse()
 end
 
+get '/uploads/complete' do
+	r = Response.new("","Upload successful")
+	
+	r.print("
+	<div class='wrapper'>
+		<p>Your upload has been successful. <a href='/'>Click here</a> to return to the main page, or <a href='/uploads/'>here</a> to return to the upload page.</p>
+	</div>
+	")
+end
+
+
 put '/uploads/upload' do
 
 	fileName = params['fileName']
@@ -42,7 +53,7 @@ put '/uploads/upload' do
 	fileType     = $2
 	fileContents = $3
 	
-	zipFileName = "files/" + fileName.split('.')[0] + ".zip"
+	zipFileName = "public/files/" + fileName.split('.')[0] + ".zip"
 	
 	begin
 		Zip::ZipFile.open(zipFileName, Zip::ZipFile::CREATE) { |zipfile|
@@ -58,5 +69,5 @@ put '/uploads/upload' do
 	#re-index file directory
 	
 	
-  	redirect '/uploads/'
+  	redirect '/uploads/complete'
 end

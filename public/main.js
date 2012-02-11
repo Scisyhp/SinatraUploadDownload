@@ -27,5 +27,4 @@ function submitUploadForm() {
 	document.getElementById('fileNameInput').value = name
 	
 	document.upload.submit()
-	
 }

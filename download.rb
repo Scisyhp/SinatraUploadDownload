@@ -1,7 +1,7 @@
 #Set up download section
 
 def getFileList
-	Dir.chdir("/Users/benwalker/Source Code/Ruby/Sinatra/files")
+	Dir.chdir("/Users/benwalker/Source Code/Ruby/Sinatra/public/files")
 	index = Dir["*"]
 	zip_index = []
 	for i in index do
@@ -89,4 +89,11 @@ get '/downloads/:name' do
 	</div>")
 	
 	return r.getFullResponse()
+end
+
+
+#serve actual files
+get '/files/:name' do |file|
+	file = File.join("#{params[:name]}",file) 
+	send_file(file, :disposition => 'attachment', :filename => File.basename(file))
 end

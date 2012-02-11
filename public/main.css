@@ -4,13 +4,6 @@ a:hover {color:#000000;text-decoration:underline}  /* mouse over link */
 a:active {color:#000000;text-decoration:underline}  /* selected link */
 
 
-#logo {
-	color:#FCFCFC
-}
-
-#Uploads {
-	color:#FCFCFC
-}
 
 #header {
 	background-color:#2D2D2D;
@@ -39,6 +32,7 @@ div.inheader {
 	padding:5px;
 	background-color:#2D2D2D;
 	float:left;
+	color:#FCFCFC;
 }
 
 #mainBody {

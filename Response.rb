@@ -14,9 +14,9 @@ class Response
 		
 		#HEADER-------------------------------------
 		@response += '<div id="header">
-			<div class="inheader" style="float:left" id="logo" '+colorChange('logo')+' onclick="window.location=\'/\'">Downloads</div>
-			
+			<div class="inheader" style="float:left" id="Downloads" '+colorChange('Downloads')+' onclick="window.location=\'/\'">Downloads</div>
 			<div class="inheader" id="Uploads" '+colorChange('Uploads')+' onclick=\'window.location="/uploads/"\'>Uploads</div>
+			<div class="inheader" id="Info" '+colorChange('Info')+' onclick=\'window.location="/info"\'>Info</div>
 		</div>' 
 		#HEADER-------------------------------------
 		
