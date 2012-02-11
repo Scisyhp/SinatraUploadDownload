@@ -1,0 +1,64 @@
+a:link {color:#000000;text-decoration:none}      /* unvisited link */
+a:visited {color:#000000;text-decoration:none}  /* visited link */
+a:hover {color:#000000;text-decoration:underline}  /* mouse over link */
+a:active {color:#000000;text-decoration:underline}  /* selected link */
+
+
+#logo {
+	color:#FCFCFC
+}
+
+#Uploads {
+	color:#FCFCFC
+}
+
+#header {
+	background-color:#2D2D2D;
+	overflow:auto;
+	border: 1px solid #000000;
+}
+
+div.wrapper {
+	background-color:#9EBEEE;
+	padding:10px;
+}
+
+div.innerwrapper {
+	padding:5px;
+	
+}
+
+#sidelistinner {
+	margin:5px;
+	padding:10px;
+}
+
+div.inheader {
+	cursor:pointer;
+	margin:5px;
+	padding:5px;
+	background-color:#2D2D2D;
+	float:left;
+}
+
+#mainBody {
+	border: 1px solid #000000;
+	float:right;
+	width:80%;
+	text-align:center;
+}
+
+#sidelist {
+	border: 1px solid #000000;
+	float:left;
+	width:15%;
+	text-align:center;
+}
+
+#actualList {
+	margin-top: 10px;
+	padding-top:3px;
+	padding-bottom:3px;
+	/*border:1px solid #000000;*/
+	background-color:#E0F3FF;
+}
